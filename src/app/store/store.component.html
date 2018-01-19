@@ -1,0 +1,35 @@
+<body>
+
+
+
+<h1 style="color:Tomato">Store Simulation</h1>
+
+<h6>Add items to inventory</h6>
+
+<label>Item Name</label>
+<input
+  type= "text"
+  class= "form-control"
+  [(ngModel)] = "itemName"
+>
+
+<label>Item Price</label>
+<input
+  type="number"
+  class="form-control"
+  [(ngModel)] = "itemPrice"
+>
+
+<label>Item Amount</label>
+<input
+  type="number"
+  class="form-control"
+  [(ngModel)] = "itemAmount"
+>
+
+<button
+  class= "btn btn-primary"
+  (click) = "inventory.addStock(itemName, itemPrice, itemAmount)"
+  >Add Item
+</button>
+</body>
